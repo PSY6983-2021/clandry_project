@@ -1,18 +1,3 @@
----
-type: "project" 
-date: "2021-08-04" 
-# Title of your project (we like creative title)
-title: "To add"
-names: [Catherine Landry]
-github_repo: https://github.com/catherinelandry
-tags: [resting state fmri, machine learning, data visualization, open science, brainhack school]
-
-summary: "Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BHS [website](https://psy6983.brainhackmtl.org/project)."
-
-# If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
-# below with the extension.
-image: ""
----
 
 # About me
 <img src="https://avatars.githubusercontent.com/u/86985765?v=4?s=100" width="100px;" alt=""/>
