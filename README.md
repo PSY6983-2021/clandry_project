@@ -55,7 +55,6 @@ All the tools used for the project:
 
 ## Data
 
-### Overal view 
 The dataset comprises 5-minutes fMRI resting state images covering the whole brain of 35 adult participants, 17 of which have severe-to-profound prelingual deafness and 18 of which are hearing individuals that serve as controls. All participants were instructed to lie still with closed eyes and to avoid holding on to thoughts for the duration of the scanning. 
 
 Here is a summary table of some participants' characteristics.
