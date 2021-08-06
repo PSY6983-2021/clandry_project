@@ -12,13 +12,13 @@
 
 ## Background
 
-The brain can be studied at different resolutions, scaling to locally functional areas to large and spatially distributed networks. At rest, brain regions with correlated temporal patterns with each other form resting state networks (RSN).  
+Functional connectivity can be studied at different resolutions, scaling from locally functional areas to large and spatially distributed networks. At rest, brain regions with correlated temporal patterns with each other form resting state networks (RSN).  
 
-Sensory deprivation leads to various functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g., [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
+Sensory deprivation leads to functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g., [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
 
 **Main objective:**
 
-Supervised machine learning applied to fMRI resting state (rs-fMRI) can yield characterization of rs-fMRI for individual-level predictions ([Khosla et al., 2019](https://doi.org/10.1016/j.mri.2019.05.031)). Therefore, this project aims to explore the importance of features in machine learning prediction at single-participant level. The achieving goal would be to interpret the coefficients in accordance to RSN. 
+Supervised machine learning can yield characterization of rs-fMRI for individual-level predictions [Khosla et al., 2019](https://doi.org/10.1016/j.mri.2019.05.031)). Therefore, this project aims to determine the most contributing features in machine learning prediction at single-participant level. The achieving goal would be to interpret the coefficients in accordance to the RSN. 
  
  ![Main objective](readme.png)
  
@@ -74,9 +74,9 @@ At the end of this project, I will have:
 
 * README file for the project repository 
 * Markdown document for my trial and error journal
-* requirements.txt that lists of all the packages used in the project
-* Jupiter notebooks with the Rise extension for the presentation slides 
-* Python scripts for data visualization and machine learning
+* requirements.txt that lists all the packages used in the project
+* Jupiter notebooks for the presentation slides and data visualization
+* Python scripts for data prep and machine learning
 
 Detailed instructions on how to use each file can be found here (soon available). 
 
