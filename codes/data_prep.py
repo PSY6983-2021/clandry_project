@@ -14,7 +14,7 @@ import shutil
 import os
 
 # intialize the layout to retrieve the data
-path = '/Users/eliassalimlopez/derivatives/fmriprep/' 
+path = '/path/to/fmriprep/' 
 file_name = 'task-rest_space-MNI152NLin2009cAsym_desc-preproc_bold'
 subjects = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15','16','17', '18']
 condition = ['control', 'deaf']
@@ -56,7 +56,7 @@ for sub in subjects:
 np.savez_compressed('schaefern100_features', cond = all_features['condition'], sub = all_features['subject'], 
                     conn = all_features['connectomes'])
 
-original = r'/Users/eliassalimlopez/PSY6983/schaefern100_features.npz'
-target = r'/Users/eliassalimlopez/PSY6983/conn_matrix/'
+original = r'/path/to/save/schaefern100_features.npz'
+target = r'/new/path/to/save/'
 
 shutil.move(original,target) # change the path of the saved data
