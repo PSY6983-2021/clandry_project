@@ -67,10 +67,12 @@ for train, val in cv.split(X, y):
     heatmap = sns.heatmap(val_matrix, vmin = 0, vmax = 1, annot = True, cmap = 'YlGnBu')
     heatmap.figure.savefig(f'confusion_matrix_{i}.png')
     i = i+1
-
+     
 # Verify the classification on the test set
-test_accuracies = pipe.score(X_test, y_test) 
-y_test_pred = pipe.predict(X_test)
+train_val = pipe.fit(X, y) # fit to the train and validation sets
+
+test_accuracies = train_val.score(X_test, y_test) 
+y_test_pred = train_val.predict(X_test)
 
 # Score metrics
 train_accuracies = np.array(train_accuracies)
@@ -80,4 +82,4 @@ test_accuracies= np.array(test_accuracies)
 print('Accuracy scores (mean ± std) for: \n')
 print(f' - Train set = {train_accuracies.mean()} ± {train_accuracies.std()}')
 print(f' - Validation set = {val_accuracies.mean()} ± {val_accuracies.std()}\n')
-print(f' - Validation set = {test_accuracies.mean()} ± {test_accuracies.std()}')
+print(f' - Test set = {test_accuracies.mean()} ± {test_accuracies.std()}')
