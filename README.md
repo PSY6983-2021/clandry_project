@@ -64,11 +64,11 @@ Here is a summary table of the sample:
 |control (n=18)   |  29.89±5.27  |     13/5     |  16.9         | 15 right   |   
 |deaf    (n=16)   |  30.00±4.33  |     12/4     |  15.9         | 12 right   |
 
-**Age distribution across the participants** ([here](https://catherinelandry.github.io/interactive_plot/age_description.html) is an interactive plot!)
+**Age distribution across the participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/age_description.html)** for an interactive plot!)
 
 ![age](images/age_participants.png)
 
-**Education distribution across the participants** ([here](https://catherinelandry.github.io/interactive_plot/education_description.html) is an interactive plot!)
+**Education distribution across the participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/education_description.html)** for an interactive plot!)
 
 ![education](images/education_participants.png)
 
@@ -103,13 +103,18 @@ Since my data was converted from dicom to Nifti prior to the beggining of the co
 [BIDS Validator](https://bids-standard.github.io/bids-validator/) web browser based version was employed to confirm if the data configuration matched the BIDS standards. 
 
 ### Data Preprocessing
- 
+
 Step 1. The Open-access [fMRIPrep](https://fmriprep.org/en/stable/index.html) pipeline was used for minimal preprocessing. 
 
 Step 2. [Load_confounds](https://github.com/catherinelandry/load_confounds) was installed and added to the data prep script as part of my denosing strategy. 
 
 ### Data Preparation
 
+![data preparation](notebooks/slides/011.png)
+
+The Schaefer atlas (2018) was employed with node definition set at 100 ROI. Pairwise correlated time series were extracted to form a correlation matrix. 
+
+*Note: the matrix contains redondant information, such as the pairs (i, j) and (j, i), which can bias the classification. Therefore, only the vectorized matrix of each participant was extracted and fed to the classifier.* 
 
 ### Machine Learning
 
@@ -126,13 +131,13 @@ Step 2. [Load_confounds](https://github.com/catherinelandry/load_confounds) was 
 
 By the end of the project, I was able to deliver:
 
-- The [README.md]() file that details the present project
+- The [README.md](https://github.com/PSY6983-2021/clandry_project) file that details the present project
 - The following python scripts:
-	1. [Data Prep]()
-	2. [Linear SVC]()
+	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes)
+	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes)
 - The following Jupyter notebooks:
-	1. [Presentation slides]()that can to be launch with the Rise extension
-	2. [Data visualization]() containing the codes that plots the static and interactive figures in the repo. Note: this notebook was conceptualize to run specific code cells that calls the python scripts needed to retrieved the data
+	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks) that can to be launch with the Rise extension
+	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks) containing the codes that plots the static and interactive figures in the repo. Note: this notebook was conceptualize to run specific code cells that calls the python scripts needed to retrieved the data
 - The requirements.txt file with all the prerequisites packages used to run the codes      
 
 # Conclusion
