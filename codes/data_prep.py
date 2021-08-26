@@ -42,7 +42,7 @@ for sub in subjects:
 
             # initialize the masker
             masker = NiftiLabelsMasker(labels_img=schaefer_atlas.maps, t_r=2.2, standardize=True,
-                                       verbose= True)
+                                       verbose= 0)
             masked_data = masker.fit(img_load)
             timeseries =  masker.transform(img_load, confounds=confounds) 
 
