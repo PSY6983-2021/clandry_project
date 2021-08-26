@@ -131,14 +131,14 @@ The Schaefer atlas (2018) was employed with node definition set at 100 ROI. Pair
 
 By the end of the project, I was able to deliver:
 
-- The [README.md](https://github.com/PSY6983-2021/clandry_project) file that details the present project
+- [README.md](https://github.com/PSY6983-2021/clandry_project): markdown file that details the present project
 - The following python scripts:
-	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes)
-	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes)
+	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script that load the nifti data, applies a masker and extract features 
+	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script with preprocessing and machine learning classifier
 - The following Jupyter notebooks:
-	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks) that can to be launch with the Rise extension
-	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks) containing the codes that plots the static and interactive figures in the repo. Note: this notebook was conceptualize to run specific code cells that calls the python scripts needed to retrieved the data
-- The requirements.txt file with all the prerequisites packages used to run the codes      
+	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can to be launch with the Rise extension
+	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. *Note: this notebook was conceptualized to run specific code cells that calls the python scripts needed to retrieved the data.*
+- The requirements.txt: file with all the prerequisites packages used to run the codes      
 
 # Conclusion
 
