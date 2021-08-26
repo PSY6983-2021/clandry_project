@@ -1,6 +1,8 @@
 
 # rs-fMRI workflow from preprocessing to machine learning classification
 
+![repo pic](images/repo_pic.png)
+
 # About me
 
 [Catherine Landry (she/her)](https://github.com/catherinelandry)
@@ -14,6 +16,8 @@ Hello! I am currently doing my master's degree in psychology at the University o
 Functional connectivity can be studied at different resolutions, scaling from locally functional areas to large and spatially distributed networks. At rest, brain regions with correlated temporal patterns with each other form resting state networks (RSN).  
 
 Sensory deprivation leads to functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g., [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
+
+Supervised machine learning can yield characterization of rs-fMRI for individual-level predictions ([Khosla et al., 2019](https://doi.org/10.1016/j.mri.2019.05.031)).
 
 ### Main objectives:
 
@@ -39,13 +43,15 @@ All the tools used for the project:
 
 * Jupyter Notebook  
   
-* Git and Github for version control 
+* Git and Github for version control
 
-* [BIDS Validator](https://bids-standard.github.io/bids-validator/) web browser based version
+* BIDS for data management
 
-* [`matplotlib`](https://matplotlib.org/), [`seaborn`](https://seaborn.pydata.org/), and [`plotly`](https://plotly.com/) for Data Visualization
+* fMRIPrep for data preprocessing
 
-* [`scikit-learn`](https://scikit-learn.org/stable/) and [`nilearn`](https://nilearn.github.io/) for Machine Learning and Statistic Analyses
+* [`matplotlib`](https://matplotlib.org/), [`seaborn`](https://seaborn.pydata.org/), and [`plotly`](https://plotly.com/) for data visualization
+
+* [`scikit-learn`](https://scikit-learn.org/stable/) and [`nilearn`](https://nilearn.github.io/) for machine learning 
 
 ## Data
 
@@ -86,6 +92,54 @@ This project was initiated as part of the course PSY6983. The following sections
 ![Main objective](images/brain_to_ear.png)
 
 <p> <font size="1">Source: Illustration created with Selman Design taken in Autodraw under the license CC BY 4.0 </font></p> 
+
+### Data Management
+
+Since my data was converted from dicom to Nifti prior to the beggining of the course, the first phase of the project was dedicated to organize my dataset into the BIDS format. This standardized neuroimaging structure enables the [FAIR guidelines](https://www.go-fair.org/fair-principles/) criteria of interoperability (I) and reusability (R), which corresponded with my objective to familiarize myself with the best practices in data management. Different tutorials and examples available in Github repos facilitated the BIDS conversion, such as: 
+
+- [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)
+- [bids-examples](https://github.com/bids-standard/bids-examples)
+
+[BIDS Validator](https://bids-standard.github.io/bids-validator/) web browser based version was employed to confirm if the data configuration matched the BIDS standards. 
+
+### Data Preprocessing
+ 
+Step 1. The Open-access [fMRIPrep](https://fmriprep.org/en/stable/index.html) pipeline was used for minimal preprocessing. 
+
+Step 2. [Load_confounds](https://github.com/catherinelandry/load_confounds) was installed and added to the data prep script as part of my denosing strategy. 
+
+### Data Preparation
+
+
+### Machine Learning
+
+
+## Tools learned during this project
+
+- **Open science software:** 
+
+- **Machine learning packages:** 
+
+- **Data visualiaztion:** 
+
+## Deliverables
+
+By the end of the project, I was able to deliver:
+
+- The [README.md]() file that details the present project
+- The following python scripts:
+	1. [Data Prep]()
+	2. [Linear SVC]()
+- The following Jupyter notebooks:
+	1. [Presentation slides]()that can to be launch with the Rise extension
+	2. [Data visualization]() containing the codes that plots the static and interactive figures in the repo. Note: this notebook was conceptualize to run specific code cells that calls the python scripts needed to retrieved the data
+- The requirements.txt file with all the prerequisites packages used to run the codes      
+
+# Conclusion
+
+# Acknowledgement
+
+A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne and François coding skills. You have all facilitated my learning journey and provided me the necessary tools when I knocked by obstacles. A great thanks to Marie-Eve with whom I shared a couple coffees during our coding sessions. 
 
 ## References
 
