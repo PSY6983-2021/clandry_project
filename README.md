@@ -66,6 +66,9 @@ Here is a summary table of some participants' characteristics.
 
 For further questions on the dataset and the acquisition parameters, I encourage you to reach out to me at cath.landry2@gmail.com
 
+[interactive plot](https://catherinelandry.github.io/interactive_plot/age_description.html)
+
+[interactive plot 2](https://catherinelandry.github.io/interactive_plot/education_description.html)
 
 ## Deliverables
 
