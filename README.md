@@ -15,18 +15,13 @@ Functional connectivity can be studied at different resolutions, scaling from lo
 
 Sensory deprivation leads to functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g., [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
 
-**Main objectives:**
+### Main objectives:
 
 * Learn reproductible neuroimaging workflow from preprocessing to data visualization to equip myself with open science tools for future neuroimaging projects.  
 
-* Determine the most contributing features in machine learning prediction at single-participant level. The achieving goal would be to interpret the weight of the coefficients in accordance to the RSN. 
- 
-![Main objective](brain_to_ear.png)
- 
-<p> <font size="1">Source: Illustration created with Selman Design taken in Autodraw under the license CC BY 4.0 </font></p> 
- 
+* Determine the most contributing features in machine learning prediction at single-participant level. The achieving goal would be to interpret the weight of the coefficients in accordance to the RSN.  
 
-**Personal objectives set for the course:**
+### Personal objectives set for the course:
 
 * Familiarize myself with open science software and best practices 
 
@@ -56,24 +51,20 @@ All the tools used for the project:
 
 The dataset comprises 5-minutes fMRI resting state images covering the whole brain of 34 adult participants, 16 of which have severe-to-profound prelingual deafness and 18 of which are hearing individuals that serve as controls. All participants were instructed to lie still and to avoid holding on to thoughts for the duration of the scanning. 
 
-Here is a summary table of demograghic characteristics of the participants:
+Here is a summary table of the sample:
 
 |                 |Age (Mean±STD)|  Sex (F/M)   |Education (yrs)| Handedness |  
 |-----------------|:------------:|:------------:|:-------------:|:----------:|  
 |control (n=18)   |  29.89±5.27  |     13/5     |  16.9         | 15 right   |   
 |deaf    (n=16)   |  30.00±4.33  |     12/4     |  15.9         | 12 right   |
 
-Age distribution across the participants 
+**Age distribution across the participants** ([here](https://catherinelandry.github.io/interactive_plot/age_description.html) is an interactive plot!)
 
-Clic [here](https://catherinelandry.github.io/interactive_plot/age_description.html) for an interactive plot
+![age](images/age_participants.png)
 
-![age](age_participants.png)
+**Education distribution across the participants** ([here](https://catherinelandry.github.io/interactive_plot/education_description.html) is an interactive plot!)
 
-Education distribution across the participants
-
-Clic [here](https://catherinelandry.github.io/interactive_plot/education_description.html) for an interactive plot
-
-![education](education_participants.png)
+![education](images/education_participants.png)
 
 For further questions on the dataset and the acquisition parameters, I encourage you to reach out to me at cath.landry2@gmail.com
 
@@ -91,6 +82,10 @@ At the end of this project, I will have:
 ## Progress overview
 
 This project was initiated as part of the course PSY6983. The following sections detail the different steps taken to achieve the deliverables of the project.
+
+![Main objective](images/brain_to_ear.png)
+
+<p> <font size="1">Source: Illustration created with Selman Design taken in Autodraw under the license CC BY 4.0 </font></p> 
 
 ## References
 
