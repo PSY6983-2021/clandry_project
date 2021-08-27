@@ -1,7 +1,9 @@
 
 # rs-fMRI Workflow from Preprocessing to Machine Learning Classification
 
-![repo pic](images/repo_pic.png)
+<p align="center">
+<img src="images/repo_pic.png">
+</p>
 
 # About me
 
@@ -64,13 +66,17 @@ Here is a summary table of the sample:
 |control (n=18)   |  29.89±5.27  |     13/5     |  16.9         | 15 right   |   
 |deaf    (n=16)   |  30.00±4.33  |     12/4     |  15.9         | 12 right   |
 
-**Age Distribution Across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/age_description.html)** for an interactive plot!)
+**Age Distribution across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/age_description.html)** for an interactive plot!)
 
-![age](images/age_participants.png)
+<p align="center">
+<img src="images/age_participants.png">
+</p>
 
-**Education Distribution Across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/education_description.html)** for an interactive plot!)
+**Education Distribution across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/education_description.html)** for an interactive plot!)
 
-![education](images/education_participants.png)
+<p align="center">
+<img src="images/education_participants.png">
+</p>
 
 For further questions on the dataset and the acquisition parameters, I encourage you to reach out to me at cath.landry2@gmail.com
 
@@ -89,15 +95,19 @@ At the end of this project, I will have:
 
 This project was initiated as part of the course PSY6983. The following sections detail the different steps taken to achieve the deliverables of the project.
 
-![Main objective](images/brain_to_ear.png)
+<p align="center">
+<img src="images/brain_to_ear.png">
+</p>
 
-<p> <font size="1">Source: Illustration created with Selman Design taken in Autodraw under the license CC BY 4.0 </font></p> 
+<p> <font size="1"> Source: Illustration created with Selman Design taken in Autodraw under the license CC BY 4.0 </font></p> 
 
 ## 1. Data Management
 
-Since my data was converted from DICOM to NIfTI prior to the beggining of the course, the first phase of the project was dedicated to organize my dataset into the BIDS format. This standardized neuroimaging structure enables the [FAIR guidelines](https://www.go-fair.org/fair-principles/) criteria of interoperability (I) and reusability (R), which corresponds with my objective to familiarize myself with the best practices in data management. Different tutorials and examples available in Github repos facilitated the BIDS conversion (see [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)). 
+Since my data was converted from DICOM to NIfTI prior to the beggining of the course, the first phase of the project was dedicated to organize my dataset into the BIDS format. This standardized neuroimaging structure enables the [FAIR guidelines](https://www.go-fair.org/fair-principles/) criteria of interoperability (I) and reusability (R), which corresponds with my objective to familiarize myself with the best practices in data management. Different tutorials and examples available in Github repos facilitated the BIDS conversion (see [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)). [BIDS Validator](https://bids-standard.github.io/bids-validator/) web browser based version confirmed that the data structure matched the BIDS standards. 
 
-[BIDS Validator](https://bids-standard.github.io/bids-validator/) web browser based version confirmed that the data structure matched the BIDS standards. 
+<p align="center">
+<img src="images/bids.png">
+</p>
 
 ## 2. Data Preprocessing
 
@@ -107,7 +117,9 @@ Since my data was converted from DICOM to NIfTI prior to the beggining of the co
 
 ## 3. Data Preparation
 
-![data preparation](notebooks/slides/011.png)
+<p align="center">
+<img src="notebooks/slides/011.png">
+</p>
 
 The Schaefer atlas (2018) was employed with dimension selection set at 100 ROI. Pairwise correlated time series were extracted to form a correlation matrix. 
 
@@ -123,7 +135,9 @@ A pipeline was used to facilitate hyper-parameters tuning for model optimization
 
 The following figure portrays the machine learning script:   
 
-![machine learning](images/machine_learning.png)
+<p align="center">
+<img src="images/machine_learning.png">
+</p>
 
 **Accuracy Scores** 
 |                                              |     Mean     |      Std     | 
@@ -151,7 +165,9 @@ The most contributing coefficients to the classifier can be visualized on the br
 
 - **Data Visualization:** I learned to plot static figures with `matplotlib` and `seaborn` and to generate interactive figures with `plotly`. I am now able to code this cool brain visualization:
 
-![brain view](images/brain_img_view.gif)
+<p align="center">
+<img src="images/brain_img_view.gif">
+</p>
 
 ## Deliverables
 
