@@ -85,7 +85,7 @@ At the end of this project, I will have:
 
 # Results
 
-## Progress overview
+## Progress Overview
 
 This project was initiated as part of the course PSY6983. The following sections detail the different steps taken to achieve the deliverables of the project.
 
