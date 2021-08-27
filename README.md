@@ -1,5 +1,5 @@
 
-# rs-fMRI workflow from preprocessing to machine learning classification
+# rs-fMRI Workflow from Preprocessing to Machine Learning Classification
 
 ![repo pic](images/repo_pic.png)
 
@@ -64,11 +64,11 @@ Here is a summary table of the sample:
 |control (n=18)   |  29.89±5.27  |     13/5     |  16.9         | 15 right   |   
 |deaf    (n=16)   |  30.00±4.33  |     12/4     |  15.9         | 12 right   |
 
-**Age distribution across the participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/age_description.html)** for an interactive plot!)
+**Age Distribution Across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/age_description.html)** for an interactive plot!)
 
 ![age](images/age_participants.png)
 
-**Education distribution across the participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/education_description.html)** for an interactive plot!)
+**Education Distribution Across the Participants** (Click **[here](https://catherinelandry.github.io/interactive_plot/education_description.html)** for an interactive plot!)
 
 ![education](images/education_participants.png)
 
@@ -95,7 +95,7 @@ This project was initiated as part of the course PSY6983. The following sections
 
 ## 1. Data Management
 
-Since my data was converted from dicom to Nifti prior to the beggining of the course, the first phase of the project was dedicated to organize my dataset into the BIDS format. This standardized neuroimaging structure enables the [FAIR guidelines](https://www.go-fair.org/fair-principles/) criteria of interoperability (I) and reusability (R), which corresponded with my objective to familiarize myself with the best practices in data management. Different tutorials and examples available in Github repos facilitated the BIDS conversion, such as: 
+Since my data was converted from DICOM to NIfTI prior to the beggining of the course, the first phase of the project was dedicated to organize my dataset into the BIDS format. This standardized neuroimaging structure enables the [FAIR guidelines](https://www.go-fair.org/fair-principles/) criteria of interoperability (I) and reusability (R), which corresponds with my objective to familiarize myself with the best practices in data management. Different tutorials and examples available in Github repos facilitated the BIDS conversion, such as: 
 
 - [bids-starter-kit](https://github.com/bids-standard/bids-starter-kit)
 - [bids-examples](https://github.com/bids-standard/bids-examples)
@@ -112,12 +112,13 @@ Since my data was converted from dicom to Nifti prior to the beggining of the co
 
 ![data preparation](notebooks/slides/011.png)
 
-The Schaefer atlas (2018) was employed with node definition set at 100 ROI. Pairwise correlated time series were extracted to form a correlation matrix. 
+The Schaefer atlas (2018) was employed with dimension selection set at 100 ROI. Pairwise correlated time series were extracted to form a correlation matrix. 
 
 *Note: the matrix contains redondant information, such as the pairs (i, j) and (j, i), which can bias the classification. Therefore, only the vectorized matrix of each participant was extracted and fed to the classifier.* 
 
 ## 4. Machine Learning
 
+![left brain](images/brain_left.gif) ![right brain](images/brain_right.gif)
 
 ## Tools learned during this project
 
@@ -126,6 +127,8 @@ The Schaefer atlas (2018) was employed with node definition set at 100 ROI. Pair
 - **Machine learning packages:** 
 
 - **Data visualization:** 
+
+![brain view](images/brain_img_view.gif)
 
 ## Deliverables
 
@@ -137,12 +140,14 @@ By the end of the project, I was able to deliver:
 	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script with preprocessing and machine learning classifier
 - The following Jupyter notebooks:
 	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can be launch with the Rise extension
-	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. *Note: this notebook was conceptualized to run specific code cells that calls the python scripts needed to retrieved the data.*
+	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. This notebook was conceptualized to run specific code cells that calls the python scripts needed to retrieved the data.
 - The requirements.txt: file with all the prerequisites packages used to run the codes      
 
-# Conclusion
+# Conclusion and Acknowledgement
 
-# Acknowledgement
+The past month has been very educational and rewarding on many levels. The course format allowed the application of new knowledge to a project that reflets my interests. While it was easy to get lost in ideas of grandeur for the project, I reached most of the goals I set for myself, notably a better understanding of neuroimaging data manipulations using open science tools and practices.  
+
+The classification perfomance outcomes illustrate the need for further investigation on single-level prediction and features importance. The vectorize correlation matrix was not a good discriminating factor between hearing and non hearing individuals. Although the results were not striking, I emerge of this experience equipped with improved coding skills and fueled with new ideas to try on my model.
 
 A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne's and François' coding skills. You have all facilitated my learning journey and provided me the necessary tools to overcome obstacles. A great thanks to Marie-Eve with whom I shared (lots of) coffees during our coding sessions. 
 
