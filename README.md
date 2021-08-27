@@ -29,7 +29,7 @@ Supervised machine learning can yield characterization of rs-fMRI for individual
 
 * Familiarize myself with open science software and its best practices 
 
-* Learn how to code with python, specifically for neuroimaging purposes   
+* Learn how to code with python, specifically for the neuroimaging field   
 
 * Have a better understanding of machine learning and its application in neuroimaging 
 
@@ -123,19 +123,19 @@ A pipeline was used to facilitate hyper-parameters tuning for model optimization
 
 The following figure portrays the machine learning script:   
 
-![]()
+![machine learning](machine_learning.png)
 
-**Accuracy scores** 
+**Accuracy Scores** 
 |                                              |     Mean     |      Std     | 
 |----------------------------------------------|:------------:|:------------:|
-|Train set                                     |  **  |     **     |  
-|Validation set                                |  **  |     **     | 
-|Test set (fit on validation set)              |     .56      |      0       | 
-|Test set (fit on train + validation set)      |      1       |      0       | 
+|Train set                                     |     1.0      |      0.0     |  
+|Validation set                                |     0.45     |      0.1     | 
+|Test set (fit on validation set)              |     0.56     |      0.0     | 
+|Test set (fit on train + validation set)      |     1.0      |      0.0     | 
 
-Using vectorized correlation matrix was not successful to classify whether the participant was hearing or not. The prediction is closed to chance level when fitting the data on the validation set and overfits when fitting the data on the whole training set (including the validation one). Many reasons could explain these results (e.g. model/hyper-parameters/features selection, sample size, variability in the deaf participants, etc.). Predifining ROI known to show differences between the two groups instead of using the whole brain might also improve the prediction at single-level. 
+Using a vectorized correlation matrix was not successful to classify whether the participant was hearing or not. The prediction is closed to chance level when fitting the data on the validation set and overfits when fitting the data on the whole training set (including the validation one). Many reasons could explain these results (e.g. model/hyper-parameters/features selection, sample size, variability in the deaf participants, etc.). Predifining ROI known to show differences between the two groups instead of using the whole brain might also improve the prediction at the single-level. 
 
-Inversing the masker to the brain allows the visualization of the most contributing coefficients to the classifer!   
+The most contributing coefficients to the classifier can be visualized on the brain!   
 
 ![left brain](images/brain_left.gif) ![right brain](images/brain_right.gif)
 
@@ -155,22 +155,22 @@ Inversing the masker to the brain allows the visualization of the most contribut
 
 By the end of the project, I was able to deliver:
 
-- [README.md](https://github.com/PSY6983-2021/clandry_project): markdown file that document the present project
+- [README.md](https://github.com/PSY6983-2021/clandry_project): markdown file that documents the present project
 - The following python scripts:
-	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script that load the nifti data, applies a masker and extract features 
+	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script that loads the nifti data, applies a masker and extracts features 
 	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script with preprocessing and machine learning classifier
 - The following Jupyter notebooks:
-	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can be launch with the Rise extension
-	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. This notebook was conceptualized to run specific code cells that calls the python scripts needed to retrieved the data
-- The requirements.txt: file with all the prerequisites packages used to run the codes      
+	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can be launched with the Rise extension
+	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. This notebook was conceptualized to run specific code cells that call the python scripts needed to retrieve the data
+- The requirements.txt: file with all the prerequisite packages used to run the codes      
 
 # Conclusion and Acknowledgement
 
-The past month has been very educational and rewarding on many levels. The course format allowed the application of new knowledge to a project that reflets my interests. While it was easy to get lost in ideas of grandeur for the project, I reached most of the goals I set for myself, notably a better understanding of neuroimaging data manipulations using open science tools and practices.  
+The past month has been very educational and rewarding on many levels. The course format allowed for the application of new knowledge to a project that reflects my interests. While it was easy to get lost in ideas of grandeur for the project, I reached most of the goals I set for myself, notably a better understanding of neuroimaging data manipulations using open science tools and practices.  
 
-The classification perfomance outcomes illustrate the need for further investigation on single-level prediction and features importance. The vectorize correlation matrix was not a good discriminating feature between hearing and non hearing individuals. Although the results were not striking, I emerge of this experience equipped with improved coding skills and fueled with new ideas to try on my model.
+The classification perfomance outcomes illustrate the need for further investigation on single-level prediction and features' importance. The vectorize correlation matrix was not a good discriminating feature between hearing and non hearing individuals. Although the results were not striking, I emerge of this experience equipped with improved coding skills and fueled with new ideas to try on my model.
 
-A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne's and François' coding skills. You have all facilitated my learning journey and provided me the necessary tools to overcome obstacles. A great thanks to Marie-Eve with whom I shared (lots of) coffees during our coding sessions. 
+A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne's and François' coding skills. You have all facilitated my learning journey and provided me with the necessary tools to overcome obstacles. A great thanks to Marie-Eve with whom I shared (lots of) coffees during our coding sessions. 
 
 ## References
 
