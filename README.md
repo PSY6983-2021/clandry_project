@@ -23,11 +23,11 @@ Supervised machine learning can yield characterization of rs-fMRI for individual
 
 * Learn reproductible neuroimaging workflow from preprocessing to data visualization to equip myself with open science tools for future neuroimaging projects.  
 
-* Determine the most contributing features in machine learning prediction at single-participant level. The achieving goal would be to interpret the weight of the coefficients in accordance to the RSN.  
+* Determine the most contributing features in machine learning prediction at single-participant level and interpret the weight of the coefficients according to the RSN.  
 
 ### Personal objectives set for the course:
 
-* Familiarize myself with open science software and best practices 
+* Familiarize myself with open science software and its best practices 
 
 * Learn how to code with python, specifically for neuroimaging purposes   
 
@@ -131,12 +131,12 @@ The Schaefer atlas (2018) was employed with node definition set at 100 ROI. Pair
 
 By the end of the project, I was able to deliver:
 
-- [README.md](https://github.com/PSY6983-2021/clandry_project): markdown file that details the present project
+- [README.md](https://github.com/PSY6983-2021/clandry_project): markdown file that document the present project
 - The following python scripts:
 	1. [Data Prep](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script that load the nifti data, applies a masker and extract features 
 	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script with preprocessing and machine learning classifier
 - The following Jupyter notebooks:
-	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can to be launch with the Rise extension
+	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can be launch with the Rise extension
 	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. *Note: this notebook was conceptualized to run specific code cells that calls the python scripts needed to retrieved the data.*
 - The requirements.txt: file with all the prerequisites packages used to run the codes      
 
@@ -144,7 +144,7 @@ By the end of the project, I was able to deliver:
 
 # Acknowledgement
 
-A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne and François coding skills. You have all facilitated my learning journey and provided me the necessary tools when I knocked by obstacles. A great thanks to Marie-Eve with whom I shared (lots of) coffees during our coding sessions. 
+A special thanks to Pierre Bellec for his advice and his insightful takes about the future of science practices. I would have been stuck longer on data preprocessing without Desiree's help and might have shed a tear without Andreanne's and François' coding skills. You have all facilitated my learning journey and provided me the necessary tools to overcome obstacles. A great thanks to Marie-Eve with whom I shared (lots of) coffees during our coding sessions. 
 
 ## References
 
