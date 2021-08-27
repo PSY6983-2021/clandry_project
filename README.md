@@ -15,7 +15,7 @@ Hello! I am currently doing my master's degree in psychology at the University o
 
 Functional connectivity can be studied at different resolutions, scaling from locally functional areas to large and spatially distributed networks. At rest, brain regions with correlated temporal patterns with each other form resting state networks (RSN).  
 
-Sensory deprivation leads to functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g., [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
+Sensory deprivation leads to functional changes in the brain beyond the affected sensory modality. Various studies have found altered RSN in deaf individuals compared to controls (e.g. [Bonna et al., 2020](https://doi.org/10.1007/s11682-020-00346-y); [Ducas et al., 2021](https://doi.org/10.21203/rs.3.rs-246296/v1)). 
 
 Supervised machine learning can yield characterization of rs-fMRI for individual-level predictions ([Khosla et al., 2019](https://doi.org/10.1016/j.mri.2019.05.031)).
 
@@ -51,7 +51,7 @@ All the tools used for the project:
 
 * [`matplotlib`](https://matplotlib.org/), [`seaborn`](https://seaborn.pydata.org/), and [`plotly`](https://plotly.com/) for data visualization
 
-* [`scikit-learn`](https://scikit-learn.org/stable/) and [`nilearn`](https://nilearn.github.io/) for machine learning 
+* [`scikit-learn`](https://scikit-learn.org/stable/) for machine learning and [`nilearn`](https://nilearn.github.io/) for neuroimaging data manipulations 
 
 ## Data
 
@@ -123,7 +123,7 @@ A pipeline was used to facilitate hyper-parameters tuning for model optimization
 
 The following figure portrays the machine learning script:   
 
-![machine learning](machine_learning.png)
+![machine learning](images/machine_learning.png)
 
 **Accuracy Scores** 
 |                                              |     Mean     |      Std     | 
@@ -133,21 +133,23 @@ The following figure portrays the machine learning script:
 |Test set (fit on validation set)              |     0.56     |      0.0     | 
 |Test set (fit on train + validation set)      |     1.0      |      0.0     | 
 
-Using a vectorized correlation matrix was not successful to classify whether the participant was hearing or not. The prediction is closed to chance level when fitting the data on the validation set and overfits when fitting the data on the whole training set (including the validation one). Many reasons could explain these results (e.g. model/hyper-parameters/features selection, sample size, variability in the deaf participants, etc.). Predifining ROI known to show differences between the two groups instead of using the whole brain might also improve the prediction at the single-level. 
+**Interpretation:** Using a vectorized correlation matrix was not successful to classify whether the participant was hearing or not. The prediction is close to chance level when fitting the data on the validation set only and overfits when fitting the data on the whole training set (including the validation one). Many reasons could explain these results (e.g. model/hyper-parameters/features selection, sample size, intra-individual differences, etc.). Predifining ROI known to show differences between the two groups instead of using the whole brain might also improve the prediction at the single-level. 
+
+But on a good note...
 
 The most contributing coefficients to the classifier can be visualized on the brain!   
 
 ![left brain](images/brain_left.gif) ![right brain](images/brain_right.gif)
 
-## Tools learned during this project
+## Tools Learned During This Project
 
-- **Open science software:** 
+- **Open Science Software:** I learned to use Git for local and remote control in order to share my project repository on Github. I was also able to navigate through different repositories to find the documentation needed for my project. Data organization, preprocessing and denoising strategies only used open access tools for reproductibility. 
 
-- **Machine learning packages:** 
+- **Machine Learning Packages:** I have a better understanding of how to use `scikit-learn`, `nilearn` and their different modules for machine learning and neuroimaging data manipulations.  
 
-- **Python scripting:**
+- **Python Scripting:** I was able to use different librairies (e.g. `numpy`, `nibabel`), code in a virtual environment with Jupyter Notebook and edit code with Virtual Studio Code. The course modules helped me understand data dimensionality and how to manipulate it. 
 
-- **Data visualization:** 
+- **Data Visualization:** I learned to plot static figures with `matplotlib` and `seaborn` and to generate interactive figures with `plotly`. I am now able to code this cool brain visualization:
 
 ![brain view](images/brain_img_view.gif)
 
@@ -161,7 +163,7 @@ By the end of the project, I was able to deliver:
 	2. [Linear SVC](https://github.com/PSY6983-2021/clandry_project/tree/main/codes): script with preprocessing and machine learning classifier
 - The following Jupyter notebooks:
 	1. [Presentation slides](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): can be launched with the Rise extension
-	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. This notebook was conceptualized to run specific code cells that call the python scripts needed to retrieve the data
+	2. [Data visualization](https://github.com/PSY6983-2021/clandry_project/tree/main/notebooks): code that plots the static and interactive figures in the repo. This notebook was conceptualized to run specific code cells that import the python scripts needed to retrieve the data
 - The requirements.txt: file with all the prerequisite packages used to run the codes      
 
 # Conclusion and Acknowledgement
