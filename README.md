@@ -132,7 +132,7 @@ A pipeline was used to facilitate hyper-parameters tuning for model optimization
 The following figure portrays the machine learning script:   
 
 <p align="center">
-<img src="images/machine_learning.png">
+<img src="images/machine_learning_.png">
 </p>
 
 **Accuracy Scores** 
